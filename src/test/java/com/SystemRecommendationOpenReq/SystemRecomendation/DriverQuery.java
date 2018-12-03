@@ -23,6 +23,7 @@ public class DriverQuery {
 		System.out.println("2 - query all requirements");
 		System.out.println("3 - query all finished requirements");
 		System.out.println("4 - query all in progress requirements");
+		System.out.println("5 - recommend an user");
 		System.out.println("0 - exit program");
 		
 		String input = scan.nextLine();
@@ -56,6 +57,9 @@ public class DriverQuery {
 				case 4:
 					//query
 					break;
+				case 5:
+					TrRecommenderByFinalizedRequirements aux = new TrRecommenderByFinalizedRequirements("2");
+					aux.execute();
 				default:
 					System.out.println("please, enter a valid option");
 					break;
@@ -65,6 +69,7 @@ public class DriverQuery {
 			System.out.println("2 - query all requirements");
 			System.out.println("3 - query all finished requirements");
 			System.out.println("4 - query all in progress requirements");
+			System.out.println("5 - recommend an user");
 			System.out.println("0 - exit program");
 			input = scan.nextLine();
 		}
